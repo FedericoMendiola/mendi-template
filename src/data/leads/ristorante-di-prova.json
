@@ -1,0 +1,41 @@
+{
+  "businessName": "Ristorante di prova",
+  "tagline": "Entra dentro!",
+  "category": "Ristorante",
+  "city": "Milano",
+  "phone": "+33 273 408 333",
+  "whatsapp": "+33 273 408 333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Milano",
+  "colors": {
+    "primary": "#F7DC6F",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Pronto per scoprire il nostro mondo?",
+    "subtitle": "Prova subito la nostra cucina!",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://source.unsplash.com/800x400/?pizzeria"
+  },
+  "services": [
+    {"title": "Pranzo", "description": "Assaporato la nostra cucina!", "icon": "check" },
+    {"title": "Cena", "description": "Scopri i nostri menù!", "icon": "check" },
+    {"title": "Pub", "description": "Entra nella nostra discoteca!", "icon": "check" }
+  ],
+  "about": {
+    "title": "Chi siamo?",
+    "description": "Ristorante che si fa riconoscere per la sua cucina innovativa e accogliente, è il luogo ideale per condividere momenti di piacere con amici e familiari.",
+    "imageUrl": "https://source.unsplash.com/800x400/?restaurantes",
+    "points": ["Prenotabile online", "Servizio clienti 24/24", "Garanzia di qualità"]
+  },
+  "testimonials": [
+    {"author": "Luca P.", "comment": "Ottimo posto con personale giovane e amichevole!", "rating": 5 },
+    {"author": "Giulia R.", "comment": "La loro cucina è veramente speciale! Consiglio di assaggiare!", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+}
