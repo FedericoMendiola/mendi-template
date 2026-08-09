@@ -19,12 +19,12 @@ const colors = config.colors || {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | {config.businessName}</title>
-    <meta name="description" content={config.hero.subtitle} />
+    <meta name="description" content={description} />
 
     <style is:global define:vars={{
-      colorPrimary: config.colors.primary,
-      colorSecondary: config.colors.secondary,
-      colorAccent: config.colors.accent,
+      colorPrimary: colors.primary,
+      colorSecondary: colors.secondary,
+      colorAccent: colors.accent,
     }}>
       :root {
         --brand-primary: var(--colorPrimary);
@@ -47,12 +47,14 @@ const colors = config.colors || {
         <span class="font-bold text-xl tracking-tight text-brand-secondary">
           {config.businessName}
         </span>
-        <a 
-          href={`tel:${config.phone}`} 
-          class="bg-brand-primary text-white font-medium px-4 py-2 rounded-lg hover:opacity-90 transition text-sm flex items-center gap-2"
-        >
-          <span>📞</span> {config.phone}
-        </a>
+        {config.phone && (
+          <a 
+            href={`tel:${config.phone}`} 
+            class="bg-brand-primary text-white font-medium px-4 py-2 rounded-lg hover:opacity-90 transition text-sm flex items-center gap-2"
+          >
+            <span>📞</span> {config.phone}
+          </a>
+        )}
       </div>
     </header>
 
@@ -66,9 +68,9 @@ const colors = config.colors || {
         </div>
         <div>
           <h4 class="font-semibold mb-2">Contatti</h4>
-          <p class="text-gray-400 text-sm">{config.address}</p>
-          <p class="text-gray-400 text-sm">Email: {config.email}</p>
-          <p class="text-gray-400 text-sm">Tel: {config.phone}</p>
+          {config.address && <p class="text-gray-400 text-sm">{config.address}</p>}
+          {config.email && <p class="text-gray-400 text-sm">Email: {config.email}</p>}
+          {config.phone && <p class="text-gray-400 text-sm">Tel: {config.phone}</p>}
         </div>
         <div>
           <h4 class="font-semibold mb-2">Zona Operativa</h4>
