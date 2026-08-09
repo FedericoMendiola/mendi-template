@@ -1,8 +1,7 @@
 ---
-import demoData from '../data/leads/demo.json';
-import '../styles/global.css'; // O il percorso del tuo file css/Tailwind (es. ../styles/main.css o ../layouts/global.css)
+import '../styles/global.css';
 
-const { data = demoData } = Astro.props;
+const { data = {} } = Astro.props;
 const config = data;
 
 const title = config.businessName || config.title || "Sito Web";

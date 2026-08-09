@@ -1,0 +1,39 @@
+{
+  "businessName": "Pizzeria Da Mario",
+  "tagline": "La vera pizza napoletana a Milano",
+  "category": "Pizzeria",
+  "city": "Milano",
+  "phone": "0212345678",
+  "whatsapp": "393123456789",
+  "email": "info@pizzeriadamario.it",
+  "address": "Via Roma 10, Milano",
+  "colors": {
+    "primary": "#dc2626",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Pizza Artigianale a Lievitazione Naturale",
+    "subtitle": "Ingredienti freschi e tradizione ogni giorno",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591"
+  },
+  "services": [
+    { "title": "Pizza da Asporto", "description": "Ordina e ritira in pizzeria", "icon": "check" },
+    { "title": "Consegna a Domicilio", "description": "Consegna rapida e calda", "icon": "check" }
+  ],
+  "about": {
+    "title": "La Nostra Passione",
+    "description": "Dal 1995 portiamo in tavola la vera tradizione.",
+    "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
+    "points": ["Ingredienti km 0", "Lievitazione 48h", "Forno a legna"]
+  },
+  "testimonials": [
+    { "author": "Luca M.", "comment": "Pizza eccezionale!", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.9,
+    "reviewsCount": 120
+  }
+}

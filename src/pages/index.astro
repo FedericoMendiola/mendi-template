@@ -1,8 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import demoData from '../data/leads/demo.json';
 
-const data = demoData as any;
+const leadFiles = import.meta.glob('../data/leads/*.json', { eager: true });
+const fileEntries = Object.values(leadFiles);
+
+const defaultData = fileEntries.length > 0 
+  ? (fileEntries[0] as any).default || fileEntries[0] 
+  : { businessName: "Demo Site" };
+
+const data = defaultData;
 ---
 
 <BaseLayout data={data} />
