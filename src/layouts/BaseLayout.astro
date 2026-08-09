@@ -1,0 +1,77 @@
+---
+import type { SiteConfig } from '../types/site';
+import siteDataRaw from '../data/site-data.json';
+import '../styles/global.css';
+
+const config: SiteConfig = siteDataRaw as SiteConfig;
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | {config.businessName}</title>
+    <meta name="description" content={config.hero.subtitle} />
+
+    <style is:global define:vars={{
+      colorPrimary: config.colors.primary,
+      colorSecondary: config.colors.secondary,
+      colorAccent: config.colors.accent,
+    }}>
+      :root {
+        --brand-primary: var(--colorPrimary);
+        --brand-secondary: var(--colorSecondary);
+        --brand-accent: var(--colorAccent);
+      }
+      
+      .bg-brand-primary { background-color: var(--brand-primary); }
+      .text-brand-primary { color: var(--brand-primary); }
+      .bg-brand-secondary { background-color: var(--brand-secondary); }
+      .text-brand-secondary { color: var(--brand-secondary); }
+      .bg-brand-accent { background-color: var(--brand-accent); }
+      .text-brand-accent { color: var(--brand-accent); }
+      .border-brand-primary { border-color: var(--brand-primary); }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        <span class="font-bold text-xl tracking-tight text-brand-secondary">
+          {config.businessName}
+        </span>
+        <a 
+          href={`tel:${config.phone}`} 
+          class="bg-brand-primary text-white font-medium px-4 py-2 rounded-lg hover:opacity-90 transition text-sm flex items-center gap-2"
+        >
+          <span>📞</span> {config.phone}
+        </a>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="bg-brand-secondary text-white py-12 border-t border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 text-center md:text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-2">{config.businessName}</h3>
+          <p class="text-gray-400 text-sm">{config.tagline}</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Contatti</h4>
+          <p class="text-gray-400 text-sm">{config.address}</p>
+          <p class="text-gray-400 text-sm">Email: {config.email}</p>
+          <p class="text-gray-400 text-sm">Tel: {config.phone}</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Zona Operativa</h4>
+          <p class="text-gray-400 text-sm">Servizio attivo su {config.city} e comuni limitrofi.</p>
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
+        © {new Date().getFullYear()} {config.businessName}. Tutti i diritti riservati.
+      </div>
+    </footer>
+  </body>
+</html>

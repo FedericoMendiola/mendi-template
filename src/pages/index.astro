@@ -1,11 +1,99 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteDataRaw from '../data/site-data.json';
+import type { SiteConfig } from '../types/site';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const config: SiteConfig = siteDataRaw as SiteConfig;
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title={config.hero.title}>
+  <section class="relative bg-brand-secondary text-white py-20 lg:py-32 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-20">
+      <img src={config.hero.backgroundImageUrl} alt={config.businessName} class="w-full h-full object-cover" />
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      {config.googleRating && (
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-3 py-1.5 rounded-full text-xs font-medium mb-6 text-yellow-400 border border-white/10">
+          <span>★ {config.googleRating.score} / 5</span>
+          <span class="text-gray-300">({config.googleRating.reviewsCount} recensioni Google)</span>
+        </div>
+      )}
+      
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+        {config.hero.title}
+      </h1>
+      
+      <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+        {config.hero.subtitle}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href={`tel:${config.phone}`} 
+          class="bg-brand-primary hover:opacity-90 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-center"
+        >
+          {config.hero.ctaPrimaryText}
+        </a>
+        <a 
+          href={`https://wa.me/${config.whatsapp}`} 
+          target="_blank"
+          class="bg-brand-accent hover:opacity-90 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-center flex items-center justify-center gap-2"
+        >
+          {config.hero.ctaSecondaryText}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-brand-secondary mb-4">I Nostri Servizi</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">Soluzioni rapide ed efficaci per ogni esigenza a {config.city}.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {config.services.map((service) => (
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-brand-primary/10 text-brand-primary rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+            ✓
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-brand-secondary">{service.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src={config.about.imageUrl} alt={config.businessName} class="rounded-2xl shadow-md w-full h-96 object-cover" />
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold text-brand-secondary mb-6">{config.about.title}</h2>
+        <p class="text-gray-600 mb-6 leading-relaxed">{config.about.description}</p>
+        <ul class="space-y-3">
+          {config.about.points.map((point) => (
+            <li class="flex items-center gap-3 text-gray-700 font-medium">
+              <span class="text-brand-primary">✔</span> {point}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-brand-primary text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Hai bisogno di assistenza immediata?</h2>
+      <p class="text-lg opacity-90 mb-8">Siamo operativi a {config.city} e pronti ad intervenire.</p>
+      <a 
+        href={`tel:${config.phone}`} 
+        class="inline-block bg-white text-brand-primary font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-gray-100 transition"
+      >
+        Chiama Ora: {config.phone}
+      </a>
+    </div>
+  </section>
+</BaseLayout>
