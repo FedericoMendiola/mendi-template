@@ -1,0 +1,41 @@
+{
+  "businessName": "Ristorante di prova",
+  "tagline": "La tua esperienza culinaria a Milano",
+  "category": "Ristorante",
+  "city": "Milano",
+  "address": "Milano",
+  "phone": "+39 327 340 8333",
+  "whatsapp": "+39 327 340 8333",
+  "email": "federicomendiola02@gmail.com",
+  "colors": {
+    "primary": "#F7DC6F", 
+    "secondary": "#0f172a", 
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Riserva ora la tua tavola",
+    "subtitle": "Scegli tra pranzo e cena",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://source.unsplash.com/1600x900/?milano-ristorante"
+  },
+  "services": [
+    { "title": "Pranzo", "description": "Gustosi piatti per il tuo pranzo quotidiano", "icon": "check" },
+    { "title": "Cena", "description": "Piatti eleganti per una cena indimenticabile", "icon": "check" },
+    { "title": "Pub", "description": "Aperitivo e atmosfera conviviale", "icon": "check" }
+  ],
+  "about": {
+    "title": "Chi siamo",
+    "description": "Ristorante giovanile e elegante con piatti freschi e di stagione",
+    "imageUrl": "https://source.unsplash.com/800x600/?milano-ristorante",
+    "points": ["Atmosfera accogliente", "Piatti freschi e di stagione", "Personale professionale e attento"]
+  },
+  "testimonials": [
+    { "author": "Cliente Google", "comment": "Ottima esperienza culinaria e servizio impeccabile!", "rating": 5 },
+    { "author": "Cliente Google", "comment": "Ristorante giovanile e elegante con piatti deliziosi!", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+ }
