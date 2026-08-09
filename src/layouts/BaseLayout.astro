@@ -3,6 +3,9 @@ import demoData from '../data/leads/demo.json';
 
 const { data = demoData } = Astro.props;
 const config = data;
+
+const title = config.businessName || config.title || "Sito Web";
+const description = config.tagline || config.hero?.subtitle || "";
 ---
 
 <!DOCTYPE html>
