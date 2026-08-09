@@ -1,0 +1,65 @@
+{
+  "businessName": "Ristorante di prova",
+  "tagline": "Il piatto perfetto a Milano!",
+  "category": "Ristorante",
+  "city": "Milano",
+  "phone": "+39 327 340 8333",
+  "whatsapp": "+39 327 340 8333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Milano",
+  "colors": {
+    "primary": "#F7DC6F",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Vieni a scoprire la nostra cucina!",
+    "subtitle": "Ristorante elegante e giovanile",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://images.unsplash.com/photo-1574161422393-3d2f1f4d8c5f"
+  },
+  "services": [
+    {
+      "title": "Pranzo",
+      "description": "Menù degustazione per lunedi a venerdi",
+      "icon": "check"
+    },
+    {
+      "title": "Cena",
+      "description": "Aperitivo e buffet per martedi a sabato",
+      "icon": "check"
+    },
+    {
+      "title": "Pub",
+      "description": "Drink e musica dal vivo nel nostro bar",
+      "icon": "check"
+    }
+  ],
+  "about": {
+    "title": "Siamo un ristorante diverso",
+    "description": "Ogni piatto è una vera scoperta!",
+    "imageUrl": "https://images.unsplash.com/photo-1563728506950-6e1d14dfbc32",
+    "points": [
+      "Atmosfera accogliente e elegante",
+      "Piatti creativi e stagionali",
+      "Scegli tra la nostra vasta carta"
+    ]
+  },
+  "testimonials": [
+    {
+      "author": "Gianni B.",
+      "comment": "Il ristorante piu' bello di Milano!",
+      "rating": 5
+    },
+    {
+      "author": "Luisa M.",
+      "comment": "Il personale e' cordiale e la cucina e' deliziosa!",
+      "rating": 5
+    }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+}
