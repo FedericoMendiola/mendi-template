@@ -1,0 +1,45 @@
+{
+  "businessName": "Ristorante di prova",
+  "tagline": "La cena più gustosa di Milano!",
+  "category": "Ristorante",
+  "city": "Milano",
+  "phone": "+393273408333",
+  "whatsapp": "+393273408333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Milano",
+  "colors": {
+    "primary": "#F7DC6F",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "La cucina di esperienza ",
+    "subtitle": "Scegli tra pranzo, cena e pub",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://source.unsplash.com/featured/1200x600/?italian-food-milano"
+  },
+  "services": [
+    { "title": "Pranzo", "description": "La nostra cucina offre piatti unici per il tuo pranzo", "icon": "check" },
+    { "title": "Cena", "description": "Un menu ricco e variegato per il tuo cena", "icon": "check" },
+    { "title": "Pub", "description": "Un luogo accogliente per la tua serata", "icon": "check" }
+  ],
+  "about": {
+    "title": "La nostra storia",
+    "description": "Ristorante di prova, un luogo elegante e giovane dove poter gustare la cucina italiana.",
+    "imageUrl": "https://source.unsplash.com/featured/1200x600/?milano-italian-food",
+    "points": [
+      "Cucina autentica e originale",
+      "Servizio cordiale e accogliente",
+      "Ambiente elegante e giovane"
+    ]
+  },
+  "testimonials": [
+    { "author": "Restaurante italiano Milano, Google", "comment": "Stupendo posto da provare!", "rating": 5 },
+    { "author": "Ristorante italiano Milano, Google", "comment": "Ambiente e cucina fantastici!", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+}
