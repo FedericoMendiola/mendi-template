@@ -1,65 +1,65 @@
 {
-  "businessName": "Ristorante Da Marco",
-  "tagline": "La cucina tipica romana a Roma",
-  "category": "Cucina Tipica Romana",
+  "businessName": "MendiTech",
+  "tagline": "Siti web e software personalizzati per te",
+  "category": "Informatica",
   "city": "Roma",
-  "phone": "+39 06 9876543",
-  "whatsapp": "393400000000",
-  "email": "info@damarco-roma.it",
-  "address": "Via delle Fratte 45, Roma",
+  "phone": "+393273408333",
+  "whatsapp": "+393273408333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Roma",
   "colors": {
-    "primary": "#b91c1c",
+    "primary": "#3498db",
     "secondary": "#0f172a",
     "accent": "#16a34a"
   },
   "hero": {
-    "title": "Scopri la vera cucina romana",
-    "subtitle": "Primi piatti della tradizione, secondi di carne scelta e dolci fatti in casa",
+    "title": "Crea il tuo sito web ideale",
+    "subtitle": "Siti web e software personalizzati per te",
     "ctaPrimaryText": "Chiama Ora",
     "ctaSecondaryText": "Invia un WhatsApp",
-    "backgroundImageUrl": "https://source.unsplash.com/1600x900/?roma,cucina,italia"
+    "backgroundImageUrl": "https://source.unsplash.com/1600x900/?software"
   },
   "services": [
     {
-      "title": "Primi piatti della tradizione romana",
-      "description": "Carbonara, amatriciana, gricia e molto altro",
+      "title": "Siti web personalizzati",
+      "description": "Creo siti web unici e personalizzati per te",
       "icon": "check"
     },
     {
-      "title": "Secondi di carne scelta",
-      "description": "Piatti di carne fresca e di alta qualità",
+      "title": "Software personalizzati",
+      "description": "Creo software personalizzato per le tue esigenze",
       "icon": "check"
     },
     {
-      "title": "Dolci della casa fatti ogni giorno",
-      "description": "Torta, gelato e altri dolci fatti in casa",
+      "title": "Aggiornamenti e manutenzioni professionali",
+      "description": "Assicuro la sicurezza e la prestazioni dei tuoi siti web e software",
       "icon": "check"
     }
   ],
   "about": {
-    "title": "La nostra storia",
-    "description": "Trattoria a conduzione familiare aperta dal 1985 nel cuore di Roma",
-    "imageUrl": "https://source.unsplash.com/1600x900/?roma,trattoria,italia",
+    "title": "Chi sono",
+    "description": "Sono un freelancer informatico laureato in Ingegneria informatica ed automatica alla Sapienza di Roma. Da qualche anno creo siti web per attività locali, in modo tale che possano far conoscere il proprio brand.",
+    "imageUrl": "https://source.unsplash.com/1600x900/?profile",
     "points": [
-      "Ingredienti a km zero",
-      "Ricette tramandate da tre generazioni",
-      "Atmosfera accogliente"
+      " Laureato in Ingegneria informatica ed automatica alla Sapienza di Roma",
+      " Esperto in creazione di siti web e software personalizzati",
+      " Professionalmente garantisco la sicurezza e le prestazioni dei tuoi siti web e software"
     ]
   },
   "testimonials": [
     {
-      "author": "Cliente Google",
-      "comment": "La carbonara è stata una vera scoperta!",
+      "author": "Google User",
+      "comment": "MendiTech è stato incredibile! Ha creato un sito web che è esattamente quello che ho richiesto.",
       "rating": 5
     },
     {
-      "author": "Cliente Google",
-      "comment": "L'atmosfera è accogliente e la cucina è deliziosa!",
+      "author": "Google User",
+      "comment": "Ho commissionato a MendiTech il mio sito web e sono stati veramente professionali e efficienti.",
       "rating": 5
     }
   ],
   "googleRating": {
     "score": 4.8,
-    "reviewsCount": 210
+    "reviewsCount": 50
   }
 }
