@@ -1,10 +1,7 @@
 ---
-import type { SiteConfig } from '../types/site';
-import siteDataRaw from '../data/site-data.json';
-import '../styles/global.css';
+import demoData from '../data/leads/demo.json';
 
-const config: SiteConfig = siteDataRaw as SiteConfig;
-const { title } = Astro.props;
+const { data = demoData } = Astro.props;
 ---
 
 <!DOCTYPE html>
