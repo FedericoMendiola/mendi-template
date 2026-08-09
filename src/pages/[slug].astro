@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { SiteData } from '../types/site';
+
+export async function getStaticPaths() {
+  const leadFiles = import.meta.glob<{ default: SiteData }>('../data/leads/*.json', { eager: true });
+
+  return Object.entries(leadFiles).map(([filepath, content]) => {
+    const filename = filepath.split('/').pop() || '';
+    const slug = filename.replace('.json', '');
+    return {
+      params: { slug },
+      props: { data: content.default },
+    };
+  });
+}
+
+const { data } = Astro.props;
+---
+
+<BaseLayout data={data} />

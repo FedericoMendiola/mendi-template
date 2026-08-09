@@ -1,0 +1,108 @@
+<<<<<<< HEAD:src/data/leads/demo.json
+{
+  "businessName": "MendiTech",
+  "tagline": "Siti web e software personalizzati per te",
+  "category": "Informatica",
+  "city": "Roma",
+  "phone": "+393273408333",
+  "whatsapp": "+393273408333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Roma",
+  "colors": {
+    "primary": "#3498db",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Crea il tuo sito web ideale",
+    "subtitle": "Siti web e software personalizzati per te",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://source.unsplash.com/1600x900/?software"
+  },
+  "services": [
+    {
+      "title": "Siti web personalizzati",
+      "description": "Creo siti web unici e personalizzati per te",
+      "icon": "check"
+    },
+    {
+      "title": "Software personalizzati",
+      "description": "Creo software personalizzato per le tue esigenze",
+      "icon": "check"
+    },
+    {
+      "title": "Aggiornamenti e manutenzioni professionali",
+      "description": "Assicuro la sicurezza e la prestazioni dei tuoi siti web e software",
+      "icon": "check"
+    }
+  ],
+  "about": {
+    "title": "Chi sono",
+    "description": "Sono un freelancer informatico laureato in Ingegneria informatica ed automatica alla Sapienza di Roma. Da qualche anno creo siti web per attività locali, in modo tale che possano far conoscere il proprio brand.",
+    "imageUrl": "https://source.unsplash.com/1600x900/?profile",
+    "points": [
+      " Laureato in Ingegneria informatica ed automatica alla Sapienza di Roma",
+      " Esperto in creazione di siti web e software personalizzati",
+      " Professionalmente garantisco la sicurezza e le prestazioni dei tuoi siti web e software"
+    ]
+  },
+  "testimonials": [
+    {
+      "author": "Google User",
+      "comment": "MendiTech è stato incredibile! Ha creato un sito web che è esattamente quello che ho richiesto.",
+      "rating": 5
+    },
+    {
+      "author": "Google User",
+      "comment": "Ho commissionato a MendiTech il mio sito web e sono stati veramente professionali e efficienti.",
+      "rating": 5
+    }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+=======
+{
+  "businessName": "Bla bla bla",
+  "tagline": "Barbiere di fama dal 1997",
+  "category": "Barbiere",
+  "city": "Bergamo",
+  "phone": "+39 327 340 8333",
+  "whatsapp": "+39 327 340 8333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Bergamo",
+  "colors": {
+    "primary": "#ff0000",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Il tuo barbiere preferito",
+    "subtitle": "Tagli, colori e servizi di alta qualità\"",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://images.unsplash.com/photo-1549697407-2f4b6b7ed5a8"
+  },
+  "services": [
+    { "title": "Taglio capelli uomo", "description": "", "icon": "check" },
+    { "title": "Taglio barba uomo", "description": "", "icon": "check" },
+    { "title": "Colore capelli uomo", "description": "", "icon": "check" }
+  ],
+  "about": {
+    "title": "La nostra storia",
+    "description": "Barbiere dal 1997, di generazione in generazione.",
+    "imageUrl": "https://images.unsplash.com/photo-1549697407-2f4b6b7ed5a8",
+    "points": ["Servizio di alta qualità", "Sorprende il tuo gusto", "Preventivi personalizzati"]
+  },
+  "testimonials": [
+    { "author": "ClienteGoogle", "comment": "", "rating": 5 },
+    { "author": "ClienteGoogle", "comment": "", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.5,
+    "reviewsCount": 50
+  }
+>>>>>>> abaf09c2f46c86b1155bb61607215db78bd71a3f:src/data/site-data.json
+}
