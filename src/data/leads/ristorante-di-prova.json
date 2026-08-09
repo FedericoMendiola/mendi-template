@@ -1,0 +1,41 @@
+{
+  "businessName": "Ristorante di prova",
+  "tagline": "Giovanile, elegante e divertente",
+  "category": "Ristorante",
+  "city": "Milano",
+  "phone": "+393273408333",
+  "whatsapp": "+393273408333",
+  "email": "federicomendiola02@gmail.com",
+  "address": "Milano",
+  "colors": {
+    "primary": "#F7DC6F",
+    "secondary": "#0f172a",
+    "accent": "#16a34a"
+  },
+  "hero": {
+    "title": "Vieni a divertirti con noi!",
+    "subtitle": "Pranzo, Cena e Pub in un'unica esperienza",
+    "ctaPrimaryText": "Chiama Ora",
+    "ctaSecondaryText": "Invia un WhatsApp",
+    "backgroundImageUrl": "https://source.unsplash.com/1600x900/?milano-nightlife"
+  },
+  "services": [
+    { "title": "Pranzo", "description": "Il nostro pranzo è l'esperienza perfetta per goderti la città.", "icon": "check" },
+    { "title": "Cena", "description": "La nostra cena è un evento da non perdere!", "icon": "check" },
+    { "title": "Pub", "description": "Il nostro pub è il posto perfetto per passare la serata con gli amici.", "icon": "check" }
+  ],
+  "about": {
+    "title": "Siamo Ristorante di prova",
+    "description": "Il nostro ristorante fa anche pub, giovanile e molto elegante.",
+    "imageUrl": "https://source.unsplash.com/1600x900/?milano-restaurant",
+    "points": ["Ospitalità garantita", "Cucina di alta qualità", "Pubblico giovane e dinamico"]
+  },
+  "testimonials": [
+    { "author": "Cliente Google", "comment": "Sono stato a cena qui la scorsa settimana e la esperienza è stata incredibile!", "rating": 5 },
+    { "author": "Cliente Google", "comment": "Il pranzo è stato delizioso e il personale è stato super gentile!", "rating": 5 }
+  ],
+  "googleRating": {
+    "score": 4.8,
+    "reviewsCount": 50
+  }
+}
